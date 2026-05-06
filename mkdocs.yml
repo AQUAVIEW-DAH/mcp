@@ -1,0 +1,153 @@
+site_name: Aquaview MCP
+site_description: >-
+  MCP server for ocean & atmospheric data — query 700,000+ datasets from NOAA,
+  IOOS, NDBC, Argo, GOES-R, NEXRAD, ESA Sentinel, and 60+ more sources directly
+  from Claude, ChatGPT, Gemini, Grok, Cursor, and any MCP client.
+site_author: Aquaview
+site_url: https://aquaview-dah.github.io/mcp/
+repo_url: https://github.com/AQUAVIEW-DAH/mcp
+repo_name: AQUAVIEW-DAH/mcp
+edit_uri: edit/main/
+
+docs_dir: .
+site_dir: _site
+use_directory_urls: true
+
+theme:
+  name: material
+  logo: assets/aquaview-logo.png
+  favicon: assets/aquaview-logo.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AQUAVIEW-DAH/mcp
+    - icon: material/web
+      link: https://aquaview.org
+      name: Aquaview platform
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - same-dir
+  - search
+
+exclude_docs: |
+  .git/
+  .github/
+  .gitignore
+  .ipynb_checkpoints/
+  LICENSE
+  demo.tape
+  *.ipynb
+  node_modules/
+  _site/
+  site/
+  mkdocs.yml
+  website/
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+
+nav:
+  - Home: README.md
+  - Install: INSTALL.md
+  - Reference:
+      - Tools Reference: docs/tools-reference.md
+      - Collections: docs/collections.md
+      - Data Model: docs/data-model.md
+      - Prompting Guide: docs/prompting-guide.md
+      - Output Formats: docs/output-formats.md
+      - FAQ: docs/faq.md
+  - Examples:
+      - Overview: examples/README.md
+      - 01 — Quickstart: examples/01-quickstart/README.md
+      - 02 — Sea Surface Temperature: examples/02-sea-surface-temperature/README.md
+      - 03 — Hurricane Tracking: examples/03-hurricane-tracking/README.md
+      - 04 — Tides & Storm Surge: examples/04-tides-and-storm-surge/README.md
+      - 05 — Argo Float Profiles: examples/05-argo-float-profiles/README.md
+      - 06 — HF Radar Surface Currents: examples/06-hf-radar-surface-currents/README.md
+      - 07 — Glider Missions: examples/07-glider-missions/README.md
+      - 08 — Ocean Color & Chlorophyll: examples/08-ocean-color-chlorophyll/README.md
+      - 09 — NEXRAD Severe Weather: examples/09-nexrad-severe-weather/README.md
+      - 10 — HRRR Forecast: examples/10-hrrr-forecast/README.md
+      - 11 — Great Lakes: examples/11-great-lakes/README.md
+      - 12 — Arctic Sea Ice: examples/12-arctic-sea-ice/README.md
+      - 13 — Deep Sea Exploration: examples/13-deep-sea-exploration/README.md
+      - 14 — Vessel Traffic AIS: examples/14-vessel-traffic-ais/README.md
+      - 15 — Oil Spill Response: examples/15-oil-spill-response/README.md
+      - 16 — Biogeochemistry: examples/16-biogeochemistry/README.md
+      - 17 — Bathymetry: examples/17-bathymetry/README.md
+      - 18 — Fisheries Science: examples/18-fisheries-science/README.md
+      - 19 — IOOS Regional Associations: examples/19-regional-deep-dives/README.md
+      - 20 — International Sources: examples/20-international-sources/README.md
+      - 21 — Satellite Imagery: examples/21-satellite-imagery/README.md
+      - Advanced:
+          - CQL2 Filtering: examples/advanced/cql2-filtering.md
+          - Aggregations Cookbook: examples/advanced/aggregations-cookbook.md
+          - Pagination & Large Queries: examples/advanced/pagination-and-large-queries.md
+  - Notebooks: notebooks/README.md
+  - Prompts: prompts/README.md
+  - Contributing: CONTRIBUTING.md

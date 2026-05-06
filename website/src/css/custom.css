@@ -1,0 +1,56 @@
+/* Aquaview brand palette — deep ocean blue with cyan accent */
+
+:root {
+  --ifm-color-primary: #0a7ec2;
+  --ifm-color-primary-dark: #0971af;
+  --ifm-color-primary-darker: #086ba5;
+  --ifm-color-primary-darkest: #075888;
+  --ifm-color-primary-light: #0c8bd5;
+  --ifm-color-primary-lighter: #1196e2;
+  --ifm-color-primary-lightest: #2da6e7;
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(10, 126, 194, 0.1);
+
+  --ifm-font-family-base: "Inter", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ifm-font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular,
+    "SF Mono", Menlo, Consolas, monospace;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #2da6e7;
+  --ifm-color-primary-dark: #169cdf;
+  --ifm-color-primary-darker: #1394d3;
+  --ifm-color-primary-darkest: #0f7aae;
+  --ifm-color-primary-light: #45afe9;
+  --ifm-color-primary-lighter: #54b6eb;
+  --ifm-color-primary-lightest: #7fc7f0;
+  --docusaurus-highlighted-code-line-bg: rgba(45, 166, 231, 0.18);
+}
+
+/* Source matrix tables — keep IDs monospace */
+.markdown table code {
+  font-size: 0.92em;
+}
+
+/* Tighten code blocks slightly */
+.markdown pre {
+  font-size: 0.92em;
+  line-height: 1.5;
+}
+
+/* Hero card on the landing page */
+.hero {
+  background: linear-gradient(135deg, #075888 0%, #0a7ec2 60%, #2da6e7 100%);
+  color: #fff;
+}
+.hero__title {
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+}
+.hero__subtitle {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin: 1rem auto 0;
+  opacity: 0.92;
+}

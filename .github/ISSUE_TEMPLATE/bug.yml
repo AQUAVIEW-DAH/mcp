@@ -1,0 +1,51 @@
+name: Bug report
+description: Something in this repo is wrong, broken, or out of date
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        For issues with the **MCP server itself** (`mcp.aquaview.org`), please open the issue at the [Aquaview homepage](https://aquaview.org) instead — this repo is examples-only.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+      description: A clear, concise description of the issue.
+      placeholder: |
+        e.g. The transcript in examples/03-hurricane-tracking shows an item ID
+        that no longer exists, or a download URL returns 404.
+    validations:
+      required: true
+
+  - type: input
+    id: file
+    attributes:
+      label: File / URL
+      description: Path to the file in this repo (or URL of the rendered page) where the issue lives.
+      placeholder: examples/03-hurricane-tracking/README.md
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client (if relevant)
+      options:
+        - Claude Desktop
+        - Claude Code
+        - Anthropic API direct
+        - ChatGPT
+        - OpenAI Agents SDK
+        - Google Gemini
+        - Cursor
+        - Cline
+        - Continue
+        - Zed
+        - Other / not applicable
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Logs, screenshots, related issues.

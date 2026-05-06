@@ -1,0 +1,88 @@
+name: Build Docusaurus preview
+
+# This workflow runs on the `docs-docusaurus` branch only. It builds the
+# Docusaurus site and uploads the static output as a workflow artifact for
+# preview / evaluation. It does NOT deploy to GitHub Pages — the main
+# branch's MkDocs workflow owns that target. To switch the live site to
+# Docusaurus, change the `branches` filter on the MkDocs workflow off `main`
+# (so it stops deploying), then enable Pages deployment from this workflow
+# by uncommenting the `deploy` job below.
+
+on:
+  push:
+    branches: [docs-docusaurus]
+    paths:
+      - "**.md"
+      - "website/**"
+      - ".github/workflows/docs-docusaurus.yml"
+      - "assets/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "website/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: website/package-lock.json
+
+      - name: Install dependencies
+        working-directory: website
+        run: npm ci
+
+      - name: Build
+        working-directory: website
+        run: npm run build
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docusaurus-site
+          path: website/build
+          retention-days: 14
+
+  # ---------------------------------------------------------------------------
+  # To go live with Docusaurus instead of MkDocs:
+  #   1. In .github/workflows/docs.yml, change the `branches` filter off `main`
+  #      (or delete the workflow) so MkDocs stops fighting for the Pages target.
+  #   2. Uncomment the `deploy` job below and merge this branch to main, OR
+  #      change the `branches` filter on this workflow to include `main`.
+  #
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     pages: write
+  #     id-token: write
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   steps:
+  #     - name: Download build
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: docusaurus-site
+  #         path: build
+  #     - name: Upload Pages artifact
+  #       uses: actions/upload-pages-artifact@v3
+  #       with:
+  #         path: build
+  #     - name: Deploy
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
