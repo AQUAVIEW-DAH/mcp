@@ -1,9 +1,9 @@
-site_name: Aquaview MCP
+site_name: AQUAVIEW MCP — Ocean & Atmospheric Data for AI Agents
 site_description: >-
   MCP server for ocean & atmospheric data — query 700,000+ datasets from NOAA,
   IOOS, NDBC, Argo, GOES-R, NEXRAD, ESA Sentinel, and 60+ more sources directly
   from Claude, ChatGPT, Gemini, Grok, Cursor, and any MCP client.
-site_author: Aquaview
+site_author: AQUAVIEW
 site_url: https://aquaview-dah.github.io/mcp/
 repo_url: https://github.com/AQUAVIEW-DAH/mcp
 repo_name: AQUAVIEW-DAH/mcp
@@ -59,7 +59,7 @@ extra:
       link: https://github.com/AQUAVIEW-DAH/mcp
     - icon: material/web
       link: https://aquaview.org
-      name: Aquaview platform
+      name: AQUAVIEW platform
   generator: false
 
 markdown_extensions:

@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="assets/aquaview-logo.png" alt="Aquaview" width="160" />
+  <img src="assets/aquaview-logo.png" alt="AQUAVIEW" width="160" />
 
-  <h1>Aquaview MCP</h1>
+  <h1>AQUAVIEW MCP</h1>
 
   <p><b>Query 700,000+ ocean & atmospheric datasets from inside Claude, ChatGPT, Gemini, Cursor, and any MCP client — no API keys, no schemas, no glue code.</b></p>
 
@@ -25,19 +25,19 @@
 
 ---
 
-## What is Aquaview MCP?
+## What is AQUAVIEW MCP?
 
-Aquaview MCP is a hosted [Model Context Protocol](https://modelcontextprotocol.io) server that gives any LLM agent direct, structured access to a unified catalog of **700,000+ oceanographic, atmospheric, and marine datasets** drawn from **68 authoritative sources** — NOAA, all 11 IOOS Regional Associations, the World Ocean Database, the Global Argo array, GOES-R satellites, NEXRAD weather radar, ESA Sentinel, IFREMER, EMODnet, Ocean Networks Canada, and more.
+AQUAVIEW MCP is a hosted [Model Context Protocol](https://modelcontextprotocol.io) server that gives any LLM agent direct, structured access to a unified catalog of **700,000+ oceanographic, atmospheric, and marine datasets** drawn from **68 authoritative sources** — NOAA, all 11 IOOS Regional Associations, the World Ocean Database, the Global Argo array, GOES-R satellites, NEXRAD weather radar, ESA Sentinel, IFREMER, EMODnet, Ocean Networks Canada, and more.
 
-Ask in plain English. Aquaview finds, filters, aggregates, and returns the data — including direct download links to NetCDF, GRIB2, GeoTIFF, and CSV files where they exist.
+Ask in plain English. AQUAVIEW finds, filters, aggregates, and returns the data — including direct download links to NetCDF, GRIB2, GeoTIFF, and CSV files where they exist.
 
 > *"Find me all NDBC buoys in the Gulf of Mexico that recorded wave heights over 6 meters during Hurricane Ian in September 2022, and give me their data files."*
 
-The model uses Aquaview's tools to scope by collection, bounding box, and time, apply CQL2 filters on per-variable statistics, and stream back STAC items with assets.
+The model uses AQUAVIEW's tools to scope by collection, bounding box, and time, apply CQL2 filters on per-variable statistics, and stream back STAC items with assets.
 
 ## Install in 30 seconds
 
-The Aquaview MCP server is hosted at **`https://mcp.aquaview.org/mcp`** (HTTP transport). No installation. No keys.
+The AQUAVIEW MCP server is hosted at **`https://mcp.aquaview.org/mcp`** (HTTP transport). No installation. No keys.
 
 ### Claude Code
 
@@ -70,7 +70,7 @@ See **[INSTALL.md](INSTALL.md)** for every supported client.
 
 ## Try these prompts
 
-Drop these into any MCP-enabled chat to see Aquaview in action:
+Drop these into any MCP-enabled chat to see AQUAVIEW in action:
 
 | # | Prompt | Sources used |
 |---|---|---|
@@ -104,7 +104,7 @@ Walkthroughs of each are in **[`examples/`](examples/)**.
 
 ## Tools
 
-Aquaview exposes four MCP tools. Full schemas in **[`docs/tools-reference.md`](docs/tools-reference.md)**.
+AQUAVIEW exposes four MCP tools. Full schemas in **[`docs/tools-reference.md`](docs/tools-reference.md)**.
 
 | Tool | Purpose |
 |---|---|
@@ -127,7 +127,7 @@ Highlighted:
 
 ## Notebooks
 
-Three Jupyter notebooks in **[`notebooks/`](notebooks/)** showing Aquaview MCP through the native agent connectors of each major LLM provider:
+Three Jupyter notebooks in **[`notebooks/`](notebooks/)** showing AQUAVIEW MCP through the native agent connectors of each major LLM provider:
 
 - `01-claude-mcp-agent.ipynb` — Anthropic Python SDK with `mcp_servers` parameter
 - `02-chatgpt-mcp-agent.ipynb` — OpenAI Agents SDK with hosted MCP tool
@@ -139,7 +139,7 @@ Each notebook asks the same research question (Argo float profiles around Hawaii
 
 ```
    ┌─────────────────────────┐         ┌──────────────────────────┐
-   │  Claude / ChatGPT /     │         │   Aquaview MCP Server    │
+   │  Claude / ChatGPT /     │         │   AQUAVIEW MCP Server    │
    │  Gemini / Cursor /      │ ──HTTP─▶│   mcp.aquaview.org/mcp   │
    │  any MCP client         │         │                          │
    └─────────────────────────┘         │  list_collections        │
@@ -176,7 +176,7 @@ Examples, prompt recipes, and integration guides are very welcome — see [`CONT
 
 ## License
 
-[MIT](LICENSE) © 2026 Aquaview.
+[MIT](LICENSE) © 2026 AQUAVIEW.
 
 ---
 

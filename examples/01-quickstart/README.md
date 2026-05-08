@@ -1,10 +1,10 @@
-# Quickstart — your first Aquaview query
+# Quickstart — your first AQUAVIEW query
 
 Confirm your client is connected and the catalog is responding. Two minutes from cold start to your first dataset.
 
 ## What this teaches
 
-- How to verify Aquaview is wired up
+- How to verify AQUAVIEW is wired up
 - The shape of `list_collections` and `search_datasets` results
 - How to ask follow-up questions in plain English
 
@@ -15,7 +15,7 @@ Confirm your client is connected and the catalog is responding. Two minutes from
 ## Prompt
 
 ```
-List the Aquaview collections. Then find me one example dataset from
+List the AQUAVIEW collections. Then find me one example dataset from
 NDBC, one from GADR, and one from GOES_R, with a one-sentence summary
 of each.
 ```
@@ -48,7 +48,7 @@ Live responses (NDBC has 1,506 items, GADR has 15,469, GOES_R has 203):
 
 ## Result the agent gave
 
-> *"Aquaview has 68 collections covering ocean, atmospheric, and marine data from NOAA, IOOS, the World Ocean Database, ESA, IFREMER, and dozens of other institutions.*
+> *"AQUAVIEW has 68 collections covering ocean, atmospheric, and marine data from NOAA, IOOS, the World Ocean Database, ESA, IFREMER, and dozens of other institutions.*
 >
 > *Three sample datasets, one per requested collection:*
 >
@@ -65,4 +65,4 @@ Live responses (NDBC has 1,506 items, GADR has 15,469, GOES_R has 203):
 ## Related examples
 
 - [`02-sea-surface-temperature/`](../02-sea-surface-temperature/) — your first real research query
-- [`../docs/prompting-guide.md`](../../docs/prompting-guide.md) — how to ask Aquaview good questions
+- [`../docs/prompting-guide.md`](../../docs/prompting-guide.md) — how to ask AQUAVIEW good questions

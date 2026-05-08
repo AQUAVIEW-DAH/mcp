@@ -1,6 +1,6 @@
 # Output Formats
 
-Aquaview tools accept an `output_format` parameter with three values: **`csv`**, **`toon`**, and **`json`**. This page shows what each looks like and when to pick which.
+AQUAVIEW tools accept an `output_format` parameter with three values: **`csv`**, **`toon`**, and **`json`**. This page shows what each looks like and when to pick which.
 
 ## TL;DR
 
@@ -15,7 +15,7 @@ The defaults are tuned: tabular tools default to `csv` because it costs ~20–50
 
 ## `csv` — sectioned CSV (LLM-friendly)
 
-Aquaview emits a sectioned CSV — multiple `## name` blocks each followed by a header row and data rows. The agent doesn't have to call a separate "list assets" tool because the assets are either summarized inline (`asset_keys` hint column) or appended as their own section.
+AQUAVIEW emits a sectioned CSV — multiple `## name` blocks each followed by a header row and data rows. The agent doesn't have to call a separate "list assets" tool because the assets are either summarized inline (`asset_keys` hint column) or appended as their own section.
 
 ```
 ## items
@@ -67,7 +67,7 @@ Default for `get_item`. Use it when reading a single record matters more than pr
 
 ## `json` — STAC API native
 
-The native [STAC API](https://stacspec.org/) shape — strict, predictable, machine-readable. Use this when you're consuming Aquaview from Python, TypeScript, or any non-LLM data pipeline.
+The native [STAC API](https://stacspec.org/) shape — strict, predictable, machine-readable. Use this when you're consuming AQUAVIEW from Python, TypeScript, or any non-LLM data pipeline.
 
 ```json
 {

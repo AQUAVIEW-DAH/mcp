@@ -8,7 +8,7 @@ Three Jupyter notebooks showing the same research question — *"Find Argo float
 | [`02-chatgpt-mcp-agent.ipynb`](02-chatgpt-mcp-agent.ipynb) | OpenAI | `openai` (Python) | Responses API, `tools=[{"type":"mcp",...}]` |
 | [`03-gemini-mcp-agent.ipynb`](03-gemini-mcp-agent.ipynb) | Google | `google-genai` + `mcp` (Python) | `generate_content` with `tools=[session]` |
 
-All three notebooks use the **Pattern A** approach — the LLM autonomously calls Aquaview MCP tools to answer the question. None of them call Aquaview directly from Python; the agent is in the loop.
+All three notebooks use the **Pattern A** approach — the LLM autonomously calls AQUAVIEW MCP tools to answer the question. None of them call AQUAVIEW directly from Python; the agent is in the loop.
 
 ## Why all three?
 
@@ -33,7 +33,7 @@ Each notebook has a setup cell at the top that installs the provider's SDK and r
 
 ## Note on cost
 
-Each notebook makes one to three model calls. Token usage is small — the MCP tool calls happen server-side via the Aquaview HTTP endpoint and are billed only for the parts the model actually reads. Expect under $0.05 per full run on each provider.
+Each notebook makes one to three model calls. Token usage is small — the MCP tool calls happen server-side via the AQUAVIEW HTTP endpoint and are billed only for the parts the model actually reads. Expect under $0.05 per full run on each provider.
 
 ## Differences worth knowing
 

@@ -1,6 +1,6 @@
 # Tools Reference
 
-Aquaview MCP exposes four tools. The catalog is built on the [STAC](https://stacspec.org/) specification — every dataset is a STAC item with stable `id`, `collection`, `geometry`, `properties`, and `assets`.
+AQUAVIEW MCP exposes four tools. The catalog is built on the [STAC](https://stacspec.org/) specification — every dataset is a STAC item with stable `id`, `collection`, `geometry`, `properties`, and `assets`.
 
 | Tool | Purpose | Typical use |
 |---|---|---|

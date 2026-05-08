@@ -2,7 +2,7 @@
   "name": "aquaview-mcp-docs",
   "version": "0.1.0",
   "private": true,
-  "description": "Aquaview MCP — examples, docs, and notebooks site (Docusaurus build)",
+  "description": "AQUAVIEW MCP — examples, docs, and notebooks site (Docusaurus build)",
   "scripts": {
     "sync": "node scripts/sync-content.mjs",
     "start": "npm run sync && docusaurus start",

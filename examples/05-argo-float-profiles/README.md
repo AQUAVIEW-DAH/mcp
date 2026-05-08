@@ -6,7 +6,7 @@ A real research prompt — and a valuable lesson in catalog interpretation.
 
 - The `GADR` collection indexes Argo floats at the **float level** (one item per float, lifetime bbox), not per-profile
 - Why a Hawaii bbox query can return Southern Ocean floats — and how to spot the mismatch using `column_stats_summary`
-- When to escalate from Aquaview's discovery layer to the underlying GDAC's spatial index
+- When to escalate from AQUAVIEW's discovery layer to the underlying GDAC's spatial index
 
 **Source used**: `GADR` — Global Argo Data Repository, NOAA NCEI
 
@@ -57,25 +57,25 @@ Inspecting the bbox of `argo_jma_7900868`: `116.11°E, -63.76°S, -81.0°W, 90.0
 
 ### 3. Why this happens
 
-Aquaview's `GADR` collection stores **one STAC item per Argo float**, with `bbox` being the rectangular envelope of all profile locations across the float's lifetime. Highly-mobile floats (and floats with antimeridian-crossing trajectories) can have bboxes that encompass huge regions they never actually visited. Six items match the Hawaii bbox; none of them are oceanographically near Hawaii.
+AQUAVIEW's `GADR` collection stores **one STAC item per Argo float**, with `bbox` being the rectangular envelope of all profile locations across the float's lifetime. Highly-mobile floats (and floats with antimeridian-crossing trajectories) can have bboxes that encompass huge regions they never actually visited. Six items match the Hawaii bbox; none of them are oceanographically near Hawaii.
 
 ### 4. The right tool for this prompt
 
-Aquaview is a **discovery** layer for Argo at the float level. To find profiles geographically near Hawaii in March 2026, the right path is:
+AQUAVIEW is a **discovery** layer for Argo at the float level. To find profiles geographically near Hawaii in March 2026, the right path is:
 
-1. Use Aquaview to **discover candidate floats and grab their GDAC URLs** (we did that — got the JMA / Coriolis / AOML floats).
+1. Use AQUAVIEW to **discover candidate floats and grab their GDAC URLs** (we did that — got the JMA / Coriolis / AOML floats).
 2. Pull the per-profile NetCDF from GDAC and filter on actual `latitude` / `longitude` of each profile cycle. The IFREMER GDAC at <https://data-argo.ifremer.fr/dac/> provides per-cycle profile files.
 3. Or use the Argo project's spatial selection tool at <https://erddap.ifremer.fr/erddap/> which queries on per-profile coordinates rather than lifetime bboxes.
 
 ## Result the agent gave
 
-> *"Important caveat first: the prompt asks for Argo profiles 'within 200 km of Hawaii' but Aquaview's `GADR` collection indexes floats at the float level, with `bbox` set to each float's lifetime trajectory envelope. Six floats match the Hawaii spatial + March 2026 temporal filter (and the deep-dive pressure constraint), but inspecting their `column_stats_summary` reveals temperature ranges of -1.87 to 4.49 °C — these are Southern Ocean / Antarctic floats whose bboxes happen to cross the antimeridian and encompass Hawaii. None of them are oceanographically near Hawaii.*
+> *"Important caveat first: the prompt asks for Argo profiles 'within 200 km of Hawaii' but AQUAVIEW's `GADR` collection indexes floats at the float level, with `bbox` set to each float's lifetime trajectory envelope. Six floats match the Hawaii spatial + March 2026 temporal filter (and the deep-dive pressure constraint), but inspecting their `column_stats_summary` reveals temperature ranges of -1.87 to 4.49 °C — these are Southern Ocean / Antarctic floats whose bboxes happen to cross the antimeridian and encompass Hawaii. None of them are oceanographically near Hawaii.*
 >
 > *The catalog returns:*
 > - *`argo_jma_7900868` (JMA), `argo_aoml_7900678`, `argo_aoml_5905269` (NOAA AOML), `argo_coriolis_6902814`, `argo_coriolis_3902129` (French Coriolis), and one more.*
 > - *All have polar lifetime bboxes (e.g. `116°E to -81°W, -64°S to 90°N`) and tropical-incompatible temperature ranges.*
 >
-> *To answer the original question — Argo profiles actually near Hawaii in March 2026 — pull profile-level data from the IFREMER GDAC (https://data-argo.ifremer.fr/dac/) and filter on per-cycle latitude/longitude. Aquaview's value here is identifying the float catalog and providing per-float download URLs; profile-level spatial filtering is the GDAC's job.*
+> *To answer the original question — Argo profiles actually near Hawaii in March 2026 — pull profile-level data from the IFREMER GDAC (https://data-argo.ifremer.fr/dac/) and filter on per-cycle latitude/longitude. AQUAVIEW's value here is identifying the float catalog and providing per-float download URLs; profile-level spatial filtering is the GDAC's job.*
 >
 > *Lesson: when a `column_stats_summary` field looks oceanographically wrong for the region you queried, you've probably hit the lifetime-bbox-envelope artifact. Use temperature as a sanity check and escalate to the source's per-profile index."*
 

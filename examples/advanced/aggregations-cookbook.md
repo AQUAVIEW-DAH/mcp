@@ -1,6 +1,6 @@
 # Advanced — Aggregations cookbook
 
-The `aggregate` tool runs server-side bucket queries on Aquaview's STAC catalog. It's the right choice for *shape* questions — counts, distributions, hot-spot maps — that don't require enumerating individual items.
+The `aggregate` tool runs server-side bucket queries on AQUAVIEW's STAC catalog. It's the right choice for *shape* questions — counts, distributions, hot-spot maps — that don't require enumerating individual items.
 
 ## Available aggregations
 
@@ -28,7 +28,7 @@ aggregate(
 )
 ```
 
-> "How many items are in Aquaview from the Gulf of Mexico in September 2024?"
+> "How many items are in AQUAVIEW from the Gulf of Mexico in September 2024?"
 
 ### Per-collection breakdown for a search
 
@@ -40,7 +40,7 @@ aggregate(
 )
 ```
 
-> "Where in Aquaview can I find wave-height data for the Mid-Atlantic?" — returns `NDBC: 14`, `MARACOOS: 8`, `CDIP: 5`, etc.
+> "Where in AQUAVIEW can I find wave-height data for the Mid-Atlantic?" — returns `NDBC: 14`, `MARACOOS: 8`, `CDIP: 5`, etc.
 
 ### Monthly histogram (Argo coverage)
 

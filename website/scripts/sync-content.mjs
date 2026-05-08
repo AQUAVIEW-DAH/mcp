@@ -170,7 +170,7 @@ async function main() {
     const out = addFrontMatter(body, {
       sidebar_position: 1,
       slug: "/",
-      title: "Aquaview MCP",
+      title: "AQUAVIEW MCP",
       description:
         "Query 700,000+ ocean and atmospheric datasets from inside Claude, ChatGPT, Gemini, Cursor, and any MCP client.",
     });
@@ -216,7 +216,7 @@ async function main() {
       {
         label: "Reference",
         position: 3,
-        link: { type: "generated-index", description: "API reference and conceptual guides for Aquaview MCP." },
+        link: { type: "generated-index", description: "API reference and conceptual guides for AQUAVIEW MCP." },
       },
       null,
       2

@@ -4,7 +4,7 @@ Find global Earth-observation imagery for combined ocean / land analyses — fro
 
 ## What this teaches
 
-- The four imagery collections in Aquaview: `sentinel-1-grd`, `sentinel-2-l2a`, `hls2-l30`, `esa-worldcover`
+- The four imagery collections in AQUAVIEW: `sentinel-1-grd`, `sentinel-2-l2a`, `hls2-l30`, `esa-worldcover`
 - Reading Sentinel scene IDs (e.g., `S2B_17QMG_20260504_1_L2A`) and tile / orbit conventions
 - Pairing imagery with ocean data for coastal-zone use cases
 

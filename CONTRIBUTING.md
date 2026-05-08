@@ -2,7 +2,7 @@
 
 Thanks for considering a contribution! This repo is **examples-only** — the MCP server itself lives elsewhere. The most valuable contributions here are:
 
-1. **New examples** — research questions you've answered with Aquaview and want to share
+1. **New examples** — research questions you've answered with AQUAVIEW and want to share
 2. **Prompt recipes** — short, copy-pasteable prompts for the `prompts/` folder
 3. **Integration guides** — setup walkthroughs for MCP clients we don't cover yet
 4. **Doc fixes** — typos, broken links, out-of-date item IDs
@@ -32,7 +32,7 @@ Thanks for considering a contribution! This repo is **examples-only** — the MC
 
 ## What we won't accept
 
-- Synthetic transcripts that don't match what Aquaview actually returns.
+- Synthetic transcripts that don't match what AQUAVIEW actually returns.
 - Examples requiring private auth, paid APIs, or local data files.
 - Mirroring upstream provider documentation. Link to it instead.
 

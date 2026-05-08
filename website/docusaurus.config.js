@@ -3,7 +3,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Aquaview MCP",
+  title: "AQUAVIEW MCP",
   tagline:
     "Query 700,000+ ocean & atmospheric datasets from inside Claude, ChatGPT, Gemini, Cursor, and any MCP client.",
   favicon: "img/aquaview-logo.png",
@@ -61,9 +61,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "Aquaview MCP",
+        title: "AQUAVIEW MCP",
         logo: {
-          alt: "Aquaview",
+          alt: "AQUAVIEW",
           src: "img/aquaview-logo.png",
         },
         items: [
@@ -109,7 +109,7 @@ const config = {
           {
             title: "More",
             items: [
-              { label: "Aquaview platform", href: "https://aquaview.org" },
+              { label: "AQUAVIEW platform", href: "https://aquaview.org" },
               { label: "MCP overview", href: "https://aquaview.org/mcp-overview" },
               { label: "Model Context Protocol", href: "https://modelcontextprotocol.io" },
             ],
@@ -123,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aquaview. Released under the MIT License.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AQUAVIEW. Released under the MIT License.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -16,7 +16,7 @@ Find ocean and marine data from non-U.S. observing systems and research data cen
 
 Live coverage from `aggregate(collection_frequency)`:
 
-| Region | Collection | Provider | Items in Aquaview |
+| Region | Collection | Provider | Items in AQUAVIEW |
 |---|---|---|---|
 | Sweden / Baltic | `VOICE_OF_THE_OCEAN` | VOTO Foundation glider data | 654 |
 | Canada / Pacific deep sea | `SEATUBE` | Ocean Networks Canada ROV/SeaTube | 484 |

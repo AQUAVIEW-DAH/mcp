@@ -1,6 +1,6 @@
 # Data Model
 
-Aquaview unifies 68 sources behind a single schema based on the [STAC](https://stacspec.org/) (SpatioTemporal Asset Catalog) specification. If you've used STAC before, this will be familiar; if not, the model is small.
+AQUAVIEW unifies 68 sources behind a single schema based on the [STAC](https://stacspec.org/) (SpatioTemporal Asset Catalog) specification. If you've used STAC before, this will be familiar; if not, the model is small.
 
 ## Three layers
 
@@ -10,7 +10,7 @@ Collection ─── many ───▶ Item ─── many ───▶ Asset
                          on 2024-09-15
 ```
 
-| Layer | What it represents | Aquaview tool |
+| Layer | What it represents | AQUAVIEW tool |
 |---|---|---|
 | **Collection** | A source (NDBC, Argo/GADR, GOES-R, etc.) | `list_collections` |
 | **Item** | A single dataset / observation / scene | `search_datasets`, `get_item` |
@@ -45,7 +45,7 @@ assets:
 
 ## The `aquaview:` properties
 
-Aquaview adds a stable namespace of properties on top of source-specific ones, so you can write filters that work across collections.
+AQUAVIEW adds a stable namespace of properties on top of source-specific ones, so you can write filters that work across collections.
 
 | Property | Meaning |
 |---|---|
@@ -173,4 +173,4 @@ See [`output-formats.md`](output-formats.md) for side-by-side examples.
 | `video/mp4` | ROV dive video (Hyperion, SeaTube) |
 | `text/html` | Source landing pages |
 
-Aquaview does **not** rehost the underlying files — `href` always points at the authoritative provider (NCEI, GCS, AWS Open Data, ERDDAP, etc.). That makes Aquaview a discovery and routing layer, not a data lake.
+AQUAVIEW does **not** rehost the underlying files — `href` always points at the authoritative provider (NCEI, GCS, AWS Open Data, ERDDAP, etc.). That makes AQUAVIEW a discovery and routing layer, not a data lake.

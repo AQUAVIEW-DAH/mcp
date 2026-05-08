@@ -1,10 +1,10 @@
 # Advanced — CQL2 filtering on column statistics
 
-The `filter` parameter on `search_datasets` and `aggregate` accepts CQL2-JSON. The killer feature is filtering on `aquaview:column_stats_summary` — Aquaview's per-variable summary that lets you *narrow by data values without downloading any files*.
+The `filter` parameter on `search_datasets` and `aggregate` accepts CQL2-JSON. The killer feature is filtering on `aquaview:column_stats_summary` — AQUAVIEW's per-variable summary that lets you *narrow by data values without downloading any files*.
 
 ## What's in `column_stats_summary`?
 
-For every item that has tabular data, Aquaview pre-computes:
+For every item that has tabular data, AQUAVIEW pre-computes:
 
 ```yaml
 aquaview:column_stats_summary:

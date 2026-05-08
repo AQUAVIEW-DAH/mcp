@@ -1,6 +1,6 @@
-# Aquaview MCP — Docusaurus website
+# AQUAVIEW MCP — Docusaurus website
 
-This directory builds the Aquaview MCP docs site with [Docusaurus 3](https://docusaurus.io/).
+This directory builds the AQUAVIEW MCP docs site with [Docusaurus 3](https://docusaurus.io/).
 
 The single source of truth for all content is the **repo root** (`README.md`, `INSTALL.md`, `CONTRIBUTING.md`, `docs/`, `examples/`, `notebooks/README.md`, `prompts/README.md`). On every build, `scripts/sync-content.mjs` copies and lightly transforms those files into `website/docs/` for Docusaurus to consume. The synced `website/docs/` is gitignored — never edit it directly.
 
@@ -33,7 +33,7 @@ A GitHub Action at `.github/workflows/docs-docusaurus.yml` builds and deploys th
 - Docusaurus 3 (React + MDX)
 - prism-react-renderer for code highlighting
 - Inter / JetBrains Mono fonts
-- Aquaview brand palette in `src/css/custom.css`
+- AQUAVIEW brand palette in `src/css/custom.css`
 
 ## Structure
 

@@ -116,11 +116,11 @@ search_datasets(
 )
 ```
 
-> Returns 2 items, both **product-level** (`drifter_hourly_qc` and `drifter_6hour_qc` — the entire interpolated QC drifter products). Aquaview indexes GDP at the product level, not per-drifter. To list which specific drifters were in Ian's path on Sep 28, download one of these products from https://erddap.aoml.noaa.gov/gdp/erddap and filter trajectories by lat/lon/time.
+> Returns 2 items, both **product-level** (`drifter_hourly_qc` and `drifter_6hour_qc` — the entire interpolated QC drifter products). AQUAVIEW indexes GDP at the product level, not per-drifter. To list which specific drifters were in Ian's path on Sep 28, download one of these products from https://erddap.aoml.noaa.gov/gdp/erddap and filter trajectories by lat/lon/time.
 
 ## Result the agent gave
 
-> *"Hurricane Ian made landfall as a Category 4 storm near Cayo Costa, FL on Sep 28, 2022. Aquaview indexes 2,448 items in the eastern Gulf bbox during the storm window, distributed across 34 collections.*
+> *"Hurricane Ian made landfall as a Category 4 storm near Cayo Costa, FL on Sep 28, 2022. AQUAVIEW indexes 2,448 items in the eastern Gulf bbox during the storm window, distributed across 34 collections.*
 >
 > ***Buoys** — Filtering NDBC items in the bbox/time-window for lifetime max wave height ≥ 6 m returns one buoy: **`ndbc_42097` (Pulley Ridge, FL, 25.7°N, 83.7°W)**, U.S. Army Corps of Engineers-owned. Its `column_stats_summary` shows max wave height 6.5 m across 2,137 observations since 2016. I can't confirm from the catalog alone that the 6.5 m was hit during Ian — that requires pulling the timeseries from https://www.ndbc.noaa.gov/data/realtime2/42097.txt and checking Sep 27–28.*
 >
@@ -128,9 +128,9 @@ search_datasets(
 >
 > ***AOML** — 42 items in the basin/window. The most useful for Ian's intensification context are the SHIPS forecasting products (`ships_atlantic_5days`, `ships_atlantic_7days`), which include OHC, isotherm depths (CD20, CD26), and SST fields used for tropical-cyclone intensity prediction. Plus 2022 XBT line data along AX7.*
 >
-> ***GDP** — Aquaview indexes the Global Drifter Program at the product level (2 items: hourly and 6-hourly QC products), not per-drifter. To enumerate drifters in Ian's path, download `drifter_hourly_qc` from https://erddap.aoml.noaa.gov/gdp/erddap and filter by trajectory.*
+> ***GDP** — AQUAVIEW indexes the Global Drifter Program at the product level (2 items: hourly and 6-hourly QC products), not per-drifter. To enumerate drifters in Ian's path, download `drifter_hourly_qc` from https://erddap.aoml.noaa.gov/gdp/erddap and filter by trajectory.*
 >
-> *Aquaview narrows the search to the right collections and product families very quickly, and `column_stats_summary` is enough to identify the candidate buoy. Confirming time-specific extreme values still requires the source data."*
+> *AQUAVIEW narrows the search to the right collections and product families very quickly, and `column_stats_summary` is enough to identify the candidate buoy. Confirming time-specific extreme values still requires the source data."*
 
 ## Variations
 

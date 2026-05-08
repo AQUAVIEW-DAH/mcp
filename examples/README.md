@@ -1,6 +1,6 @@
 # Examples
 
-Real walkthroughs of asking Aquaview MCP questions you'd actually ask. Each folder contains:
+Real walkthroughs of asking AQUAVIEW MCP questions you'd actually ask. Each folder contains:
 
 - The plain-English **prompt**
 - The **transcript** of the agent's tool calls
@@ -42,7 +42,7 @@ Deeper, technique-focused guides in [`advanced/`](advanced/):
 
 ## How to run an example
 
-1. Make sure Aquaview MCP is connected to your client — see [`../INSTALL.md`](../INSTALL.md).
+1. Make sure AQUAVIEW MCP is connected to your client — see [`../INSTALL.md`](../INSTALL.md).
 2. Open the example's `README.md`.
 3. Copy the **prompt** into your chat.
 4. Compare what your agent does against the transcript.
