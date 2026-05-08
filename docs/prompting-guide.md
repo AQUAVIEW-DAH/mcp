@@ -1,6 +1,6 @@
 # Prompting Guide
 
-Aquaview works with any MCP-enabled LLM, but a few prompting habits make a big difference in result quality and tool-call efficiency. This page collects what we've learned shipping example walkthroughs across Claude, GPT, and Gemini.
+AQUAVIEW works with any MCP-enabled LLM, but a few prompting habits make a big difference in result quality and tool-call efficiency. This page collects what we've learned shipping example walkthroughs across Claude, GPT, and Gemini.
 
 ## The five habits
 
@@ -57,7 +57,7 @@ The model will follow up each search result with a `get_item` call, which return
 ### "Tell me what's available"
 
 ```
-What ocean and atmospheric data sources does Aquaview have for the Gulf of Maine?
+What ocean and atmospheric data sources does AQUAVIEW have for the Gulf of Maine?
 ```
 
 The model will call `list_collections` and either filter to ones with relevant keywords (`NERACOOS`, `NDBC`, `MARACOOS`, `NEFSC`) or use `aggregate(collection_frequency, bbox=...)` to rank by item count.
@@ -125,7 +125,7 @@ The `INCIDENT_NEWS` collection contains text-heavy oil-spill incident reports. F
 
 Copy these into the prompt or system message of your agent application:
 
-> *Aquaview MCP gives you access to a unified STAC catalog of ocean and atmospheric data. When the user asks about a region, prefer `bbox` over including the region name in `q`. When the user asks "how many" or "where are the hot spots," prefer `aggregate` over `search_datasets`. When the user asks for actual download links, follow up search results with `get_item`. Always cite the collection ID and item ID for any specific dataset you mention.*
+> *AQUAVIEW MCP gives you access to a unified STAC catalog of ocean and atmospheric data. When the user asks about a region, prefer `bbox` over including the region name in `q`. When the user asks "how many" or "where are the hot spots," prefer `aggregate` over `search_datasets`. When the user asks for actual download links, follow up search results with `get_item`. Always cite the collection ID and item ID for any specific dataset you mention.*
 
 For agent applications targeting researchers, also include:
 

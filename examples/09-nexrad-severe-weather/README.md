@@ -72,7 +72,7 @@ get_item(collection = "NEXRAD_L2", item_id = "nexrad_l2_kgsp")
 > - *KMRX, Sep 27: gs://gcp-public-data-nexrad-l2/2024/09/27/KMRX/*
 > - *KJKL, Sep 27: gs://gcp-public-data-nexrad-l2/2024/09/27/KJKL/*
 >
-> *Open the .gz files with Py-ART (`pyart.io.read_nexrad_archive(...)`) or GR2Analyst. Aquaview is the discovery layer; storm-relative interpretation requires the actual radar volumes."*
+> *Open the .gz files with Py-ART (`pyart.io.read_nexrad_archive(...)`) or GR2Analyst. AQUAVIEW is the discovery layer; storm-relative interpretation requires the actual radar volumes."*
 
 ## Variations
 

@@ -49,7 +49,7 @@ aggregate(
 )
 ```
 
-> **Important finding**: Only 10 items total across the five NMFS center collections, and all 10 are in `NEFSC`. The `AFSC`, `NWFSC`, `PIFSC`, and `SEFSC` collections are registered but currently have zero indexed items in the Aquaview catalog. This is a coverage gap to flag.
+> **Important finding**: Only 10 items total across the five NMFS center collections, and all 10 are in `NEFSC`. The `AFSC`, `NWFSC`, `PIFSC`, and `SEFSC` collections are registered but currently have zero indexed items in the AQUAVIEW catalog. This is a coverage gap to flag.
 
 ## Result the agent gave
 
@@ -59,7 +59,7 @@ aggregate(
 >
 > *2. **du Pontavice modeled bottom temperature** — 1/12° daily product from ROMS-NWA bias-corrected with GLORYS12v1, spanning 1959–2020. Use this for long-term context, climate decomposition, and pre-FIShBOT historical analysis.*
 >
-> ***Coverage caveat**: The other four NMFS Science Center collections (AFSC, NWFSC, PIFSC, SEFSC) are listed in `list_collections` but currently have zero items indexed by Aquaview. For Alaska bottom-trawl groundfish, Pacific Hake, Hawaii bottomfish, or SE Atlantic / Gulf of Mexico fisheries data, you'll need to query the source ERDDAPs directly (e.g., AFSC's data portal at https://www.fisheries.noaa.gov/alaska/science-data) or wait for those collections to be populated.*
+> ***Coverage caveat**: The other four NMFS Science Center collections (AFSC, NWFSC, PIFSC, SEFSC) are listed in `list_collections` but currently have zero items indexed by AQUAVIEW. For Alaska bottom-trawl groundfish, Pacific Hake, Hawaii bottomfish, or SE Atlantic / Gulf of Mexico fisheries data, you'll need to query the source ERDDAPs directly (e.g., AFSC's data portal at https://www.fisheries.noaa.gov/alaska/science-data) or wait for those collections to be populated.*
 >
 > *Each NMFS center publishes parallel products for its region — the AFSC equivalent in the Bering Sea is the `goa_bts` and `ebs_bts` bottom-trawl-survey series."*
 

@@ -1,6 +1,6 @@
-# Installing Aquaview MCP
+# Installing AQUAVIEW MCP
 
-The Aquaview MCP server is hosted at:
+The AQUAVIEW MCP server is hosted at:
 
 ```
 https://mcp.aquaview.org/mcp
@@ -37,7 +37,7 @@ One command:
 claude mcp add --transport http aquaview https://mcp.aquaview.org/mcp
 ```
 
-Restart your session and ask Claude: *"List the Aquaview collections."*
+Restart your session and ask Claude: *"List the AQUAVIEW collections."*
 
 ## Claude Desktop
 
@@ -55,7 +55,7 @@ Restart your session and ask Claude: *"List the Aquaview collections."*
 }
 ```
 
-3. Quit and relaunch Claude Desktop. You should see Aquaview's four tools in the tool picker (the small hammer icon under the input box).
+3. Quit and relaunch Claude Desktop. You should see AQUAVIEW's four tools in the tool picker (the small hammer icon under the input box).
 
 > Older Claude Desktop builds without HTTP transport support can use the [`mcp-remote`](https://www.npmjs.com/package/mcp-remote) shim. See [Troubleshooting](#troubleshooting).
 
@@ -89,10 +89,10 @@ TypeScript (`@anthropic-ai/sdk`) takes the same `mcp_servers` array.
 
 ## ChatGPT Custom Connector
 
-ChatGPT Plus/Pro/Team workspaces with **Custom Connectors** enabled can add Aquaview directly:
+ChatGPT Plus/Pro/Team workspaces with **Custom Connectors** enabled can add AQUAVIEW directly:
 
 1. Open **ChatGPT → Settings → Connectors → Add custom**.
-2. Name: `Aquaview`. Server URL: `https://mcp.aquaview.org/mcp`. Transport: `Streamable HTTP`.
+2. Name: `AQUAVIEW`. Server URL: `https://mcp.aquaview.org/mcp`. Transport: `Streamable HTTP`.
 3. Save. The connector appears in the model picker; toggle it on for any chat.
 
 ## OpenAI Agents SDK
@@ -111,7 +111,7 @@ aquaview = MCPServerStreamableHttp(
 agent = Agent(
     name="Ocean Researcher",
     model="gpt-5",
-    instructions="You answer ocean and atmospheric science questions using Aquaview.",
+    instructions="You answer ocean and atmospheric science questions using AQUAVIEW.",
     mcp_servers=[aquaview],
 )
 
@@ -209,7 +209,7 @@ Zed reads MCP servers from `~/.config/zed/settings.json`:
 
 After connecting in any client, run this prompt:
 
-> List the Aquaview collections and tell me how many there are.
+> List the AQUAVIEW collections and tell me how many there are.
 
 You should see the model call `list_collections` and report **68 collections**. If it reports a different number or fails to call the tool, see Troubleshooting.
 

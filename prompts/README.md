@@ -1,12 +1,12 @@
 # Prompt recipes
 
-Short, copy-pasteable prompt templates for common Aquaview MCP scenarios. Drop these into Claude Desktop, ChatGPT, Cursor, or any MCP-enabled client.
+Short, copy-pasteable prompt templates for common AQUAVIEW MCP scenarios. Drop these into Claude Desktop, ChatGPT, Cursor, or any MCP-enabled client.
 
 ## System prompt — research assistant
 
 ```
 You are an ocean and atmospheric data research assistant with access to
-Aquaview MCP, a unified STAC catalog of 700,000+ datasets across 68
+AQUAVIEW MCP, a unified STAC catalog of 700,000+ datasets across 68
 sources (NOAA, IOOS, World Ocean Database, Argo, GOES-R, NEXRAD, ESA
 Sentinel, IFREMER, EMODnet, Ocean Networks Canada, and more).
 
@@ -27,7 +27,7 @@ Use `exclude_collections="INCIDENT_NEWS"` on broad searches.
 ### Region survey
 
 ```
-What ocean and atmospheric data sources does Aquaview have for {REGION}?
+What ocean and atmospheric data sources does AQUAVIEW have for {REGION}?
 Use an aggregation to break down by collection. Then list the top 3
 collections with example item IDs.
 ```
@@ -67,7 +67,7 @@ Compare {SOURCE_A} {VARIABLE_A} and {SOURCE_B} {VARIABLE_B} during
 ### Catalog scoping
 
 ```
-List the Aquaview collections that contain {VARIABLE} measurements in
+List the AQUAVIEW collections that contain {VARIABLE} measurements in
 {REGION}. For each, give the temporal extent and an example item ID I
 can fetch with get_item.
 ```

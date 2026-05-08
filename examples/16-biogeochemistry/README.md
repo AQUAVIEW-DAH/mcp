@@ -33,7 +33,7 @@ search_datasets(
 )
 ```
 
-> Returns **0 items**. The multi-word free-text search across `BCODM` titles/descriptions doesn't match this combination. Aquaview's `BCODM` indexing in this bbox is sparse — the search needs to drop `q` and inspect all the available items.
+> Returns **0 items**. The multi-word free-text search across `BCODM` titles/descriptions doesn't match this combination. AQUAVIEW's `BCODM` indexing in this bbox is sparse — the search needs to drop `q` and inspect all the available items.
 
 ### 2. Drop the free-text — see what BCO-DMO actually covers
 
@@ -72,13 +72,13 @@ search_datasets(
 
 ## Result the agent gave
 
-> *"For North Atlantic biogeochemistry, BCO-DMO's coverage in Aquaview is sparse — only 6 items match the bbox -80°W to -30°W, 25°N to 55°N, and the multi-word free-text query for 'nitrate alkalinity primary production' returns zero (BCO-DMO titles use project-name framing, not analyte names).*
+> *"For North Atlantic biogeochemistry, BCO-DMO's coverage in AQUAVIEW is sparse — only 6 items match the bbox -80°W to -30°W, 25°N to 55°N, and the multi-word free-text query for 'nitrate alkalinity primary production' returns zero (BCO-DMO titles use project-name framing, not analyte names).*
 >
 > *The most valuable item by far is **`bcodmo_dataset_3918`** — the **Bermuda Atlantic Time-Series (BATS)** CTD profile dataset. Monthly hydrographic cruises to 31° 40' N, 64° 10' W since 1988, plus biweekly cruises to a neighboring location (Hydrostation S, 32° 10' N, 64° 30' W). Variables: pressure, depth, temperature, conductivity, salinity, dissolved oxygen, beam attenuation, fluorescence, PAR. ERDDAP: https://erddap.bco-dmo.org/erddap.*
 >
 > *Other items in the bbox are project-specific (BAIT aerosol Fe isotopes, MOCNESS net tows from R/V Atlantic Explorer, a North Carolina squidpop predation experiment) — useful for specific research questions, less for survey-style biogeochemistry.*
 >
-> ***Caveat**: BCO-DMO's full North Atlantic catalog is far larger than 6 datasets. Aquaview's coverage of BCO-DMO is partial; for a complete catalog search, use BCO-DMO's own portal at https://www.bco-dmo.org/. For a multi-decade complement, the **World Ocean Database (WOD)** has bottle, CTD, and float profiles back to 1770 with broader analyte coverage."*
+> ***Caveat**: BCO-DMO's full North Atlantic catalog is far larger than 6 datasets. AQUAVIEW's coverage of BCO-DMO is partial; for a complete catalog search, use BCO-DMO's own portal at https://www.bco-dmo.org/. For a multi-decade complement, the **World Ocean Database (WOD)** has bottle, CTD, and float profiles back to 1770 with broader analyte coverage."*
 
 ## Variations
 

@@ -7,7 +7,7 @@ body:
       value: |
         Thanks for taking the time to report a bug.
 
-        For issues with the **MCP server itself** (`mcp.aquaview.org`), please open the issue at the [Aquaview homepage](https://aquaview.org) instead — this repo is examples-only.
+        For issues with the **MCP server itself** (`mcp.aquaview.org`), please open the issue at the [AQUAVIEW homepage](https://aquaview.org) instead — this repo is examples-only.
 
   - type: textarea
     id: what

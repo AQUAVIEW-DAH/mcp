@@ -1,8 +1,8 @@
 # FAQ
 
-## What is Aquaview?
+## What is AQUAVIEW?
 
-Aquaview is a unified discovery layer for ocean, atmospheric, and marine data. It indexes 700,000+ datasets across 68 authoritative sources (NOAA, IOOS, World Ocean Database, Argo, ESA, IFREMER, etc.) into a single STAC catalog and exposes that catalog as a Model Context Protocol (MCP) server so any LLM agent can query it directly.
+AQUAVIEW is a unified discovery layer for ocean, atmospheric, and marine data. It indexes 700,000+ datasets across 68 authoritative sources (NOAA, IOOS, World Ocean Database, Argo, ESA, IFREMER, etc.) into a single STAC catalog and exposes that catalog as a Model Context Protocol (MCP) server so any LLM agent can query it directly.
 
 Platform: <https://aquaview.org>
 MCP overview: <https://aquaview.org/mcp-overview>
@@ -11,13 +11,13 @@ MCP overview: <https://aquaview.org/mcp-overview>
 
 The hosted endpoint at `https://mcp.aquaview.org/mcp` is currently free to use, no key required. Heavy production workloads should reach out via the homepage.
 
-## Does Aquaview host the actual data files?
+## Does AQUAVIEW host the actual data files?
 
-No. Aquaview indexes metadata and exposes asset links (`href`s) that point at the authoritative providers — NCEI, AWS Open Data, Google Cloud Storage, ERDDAP, and so on. Data ownership stays with the source institution. Aquaview is the discovery and routing layer.
+No. AQUAVIEW indexes metadata and exposes asset links (`href`s) that point at the authoritative providers — NCEI, AWS Open Data, Google Cloud Storage, ERDDAP, and so on. Data ownership stays with the source institution. AQUAVIEW is the discovery and routing layer.
 
-## What's the difference between Aquaview MCP and ERDDAP / STAC API directly?
+## What's the difference between AQUAVIEW MCP and ERDDAP / STAC API directly?
 
-| Aspect | Aquaview MCP | Direct ERDDAP / STAC API |
+| Aspect | AQUAVIEW MCP | Direct ERDDAP / STAC API |
 |---|---|---|
 | Sources unified | 68 in one query | Per-server |
 | Query language | Natural language → CQL2 | Custom per server |
@@ -25,7 +25,7 @@ No. Aquaview indexes metadata and exposes asset links (`href`s) that point at th
 | Per-variable filtering | Yes (`column_stats_summary`) | Source-dependent |
 | Aggregations | Native | Source-dependent |
 
-Aquaview ingests, normalizes, and re-publishes those upstream catalogs into a single schema. You give up some source-specific richness in exchange for unified search across decades of data and dozens of providers.
+AQUAVIEW ingests, normalizes, and re-publishes those upstream catalogs into a single schema. You give up some source-specific richness in exchange for unified search across decades of data and dozens of providers.
 
 ## Which LLMs are supported?
 
@@ -57,17 +57,17 @@ Currently soft-capped at a generous default per IP. Hard limits aren't published
 | Weather model (HRRR) | Hourly |
 | Archive (WOD, NEXRAD historical) | Periodic batches |
 
-Aquaview re-indexes on a rolling schedule. Item-level "last modified" is preserved from the source.
+AQUAVIEW re-indexes on a rolling schedule. Item-level "last modified" is preserved from the source.
 
 ## Can I add a source?
 
-Yes — open an issue with a link to the upstream catalog and a short description. Aquaview prioritizes sources with stable APIs and authoritative provenance.
+Yes — open an issue with a link to the upstream catalog and a short description. AQUAVIEW prioritizes sources with stable APIs and authoritative provenance.
 
 ## What does the `aquaview:` property prefix mean?
 
-These are normalized properties Aquaview adds on top of source-specific ones (which retain their original names). The normalization makes cross-source filtering possible. See [`data-model.md`](data-model.md).
+These are normalized properties AQUAVIEW adds on top of source-specific ones (which retain their original names). The normalization makes cross-source filtering possible. See [`data-model.md`](data-model.md).
 
-## Does Aquaview support GraphQL / REST in addition to MCP?
+## Does AQUAVIEW support GraphQL / REST in addition to MCP?
 
 This repo focuses on MCP. The underlying STAC API is also exposed; ask on the homepage for access.
 
@@ -87,6 +87,6 @@ Either ask the LLM directly (*"give me the download URL for that item"*) or call
 
 "Sources" sometimes refers to source organizations (e.g., NOAA), and "collections" refers to the per-program subdivisions (NDBC, COOPS, GOES-R, etc., are all NOAA but are separate collections). The number of collections is the more useful figure for filtering: **68**.
 
-## How do I cite Aquaview in academic work?
+## How do I cite AQUAVIEW in academic work?
 
-Cite the underlying data source — Aquaview is a discovery layer, not a primary publisher. Aquaview's catalog records preserve `aquaview:institution`, original DOIs where available, and asset URLs back to the authoritative provider. We recommend citing both: the original dataset, and Aquaview as the discovery tool ("dataset discovered via aquaview.org").
+Cite the underlying data source — AQUAVIEW is a discovery layer, not a primary publisher. AQUAVIEW's catalog records preserve `aquaview:institution`, original DOIs where available, and asset URLs back to the authoritative provider. We recommend citing both: the original dataset, and AQUAVIEW as the discovery tool ("dataset discovered via aquaview.org").

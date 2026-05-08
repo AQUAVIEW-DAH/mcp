@@ -1,11 +1,11 @@
 name: New source request
-description: Request that Aquaview index a new ocean / atmospheric / marine data source
+description: Request that AQUAVIEW index a new ocean / atmospheric / marine data source
 labels: ["source-request"]
 body:
   - type: markdown
     attributes:
       value: |
-        Aquaview prioritizes sources with stable APIs and authoritative provenance. We index ERDDAP, STAC, THREDDS, and well-documented HTTP APIs most easily.
+        AQUAVIEW prioritizes sources with stable APIs and authoritative provenance. We index ERDDAP, STAC, THREDDS, and well-documented HTTP APIs most easily.
 
   - type: input
     id: name
@@ -42,7 +42,7 @@ body:
     id: variables
     attributes:
       label: Variables / dataset families
-      description: What's in this source that would be valuable in Aquaview?
+      description: What's in this source that would be valuable in AQUAVIEW?
       placeholder: |
         e.g. Underwater glider missions in the Mediterranean; CTD profiles
         with temperature, salinity, oxygen; ~5,000 missions, 2010-present.

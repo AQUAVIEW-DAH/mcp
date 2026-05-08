@@ -1,6 +1,6 @@
 # Collections
 
-Aquaview's catalog unifies **68 source collections** spanning **~700,000 datasets** of ocean, atmospheric, and marine data. Every source is normalized to the [STAC](https://stacspec.org/) item model, so you can search, filter, aggregate, and fetch across all of them with the same four tools.
+AQUAVIEW's catalog unifies **68 source collections** spanning **~700,000 datasets** of ocean, atmospheric, and marine data. Every source is normalized to the [STAC](https://stacspec.org/) item model, so you can search, filter, aggregate, and fetch across all of them with the same four tools.
 
 This page lists every collection grouped by provider family. Use the **ID** column with the `collections` parameter of `search_datasets` and `aggregate`.
 

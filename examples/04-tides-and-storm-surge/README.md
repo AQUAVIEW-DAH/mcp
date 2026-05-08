@@ -59,7 +59,7 @@ Real asset list — 26 keys. Each `href` points at the CO-OPS data API. Excerpt:
 
 | Key | Format | URL |
 |---|---|---|
-| `water_level_csv` | CSV | `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=8665530&product=water_level&format=csv&time_zone=gmt&units=metric&datum=MLLW&date=recent&application=AquaView_STAC_Indexer` |
+| `water_level_csv` | CSV | `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=8665530&product=water_level&format=csv&time_zone=gmt&units=metric&datum=MLLW&date=recent&application=AQUAVIEW_STAC_Indexer` |
 | `hourly_height_csv` | CSV | same base, `product=hourly_height` |
 | `high_low_csv` | CSV | same base, `product=high_low` |
 | `predictions_csv` | CSV | same base, `product=predictions` |
@@ -71,7 +71,7 @@ Item-level temporal extent: **start_datetime 1899-09-13**, **end_datetime 2026-0
 
 ## Result the agent gave
 
-> *"NOAA CO-OPS station 8665530 (Charleston, SC) is at 32.78°N, 79.92°W. The catalog reports the station has continuous data from 1899-09-13 to 2026-02-26, indexed by Aquaview from `https://tidesandcurrents.noaa.gov/map/index.html?id=8665530`.*
+> *"NOAA CO-OPS station 8665530 (Charleston, SC) is at 32.78°N, 79.92°W. The catalog reports the station has continuous data from 1899-09-13 to 2026-02-26, indexed by AQUAVIEW from `https://tidesandcurrents.noaa.gov/map/index.html?id=8665530`.*
 >
 > ***Variables (8 with summary stats):** Water Level (-0.35 to 2.10 m), Mean Sea Level (0.43 to 1.33 m), Air Temperature (-6.1 to 23.8 °C), Water Temperature (6.7 to 13.8 °C), Wind Speed (0 to 12.8 m/s), Wind Gust (0 to 20.7 m/s ≈ 46 mph), Wind Direction (0–360°), Barometric Pressure (1006.4 to 1031.9 mbar). The 2.10 m water level is consistent with a major storm-surge event.*
 >

@@ -13,9 +13,9 @@ Quick-start guides for each of the eleven U.S. Integrated Ocean Observing System
 
 ## The eleven RAs
 
-The current Aquaview catalog item count for each, ordered by coverage (live snapshot from `aggregate(collection_frequency)`):
+The current AQUAVIEW catalog item count for each, ordered by coverage (live snapshot from `aggregate(collection_frequency)`):
 
-| RA | Collection ID | Region | Items in Aquaview |
+| RA | Collection ID | Region | Items in AQUAVIEW |
 |---|---|---|---|
 | **Southeast Coastal OOS** | `SECOORA` | SE U.S. coast + GoM | 1,268 |
 | **Alaska OOS** | `AOOS` | Alaska, Arctic | 1,053 |
@@ -31,7 +31,7 @@ The current Aquaview catalog item count for each, ordered by coverage (live snap
 | **Pacific Northwest OOS** | `NANOOS` | Oregon, Washington | 8 |
 | **Coastal Data Information Program** | `CDIP` | Coastal U.S. (Scripps + USACE) | 5 |
 
-> Aquaview's RA coverage is uneven — SECOORA, AOOS, and CENCOOS have rich coverage; CDIP and NANOOS are thinly indexed at the moment. For RAs with low item counts, consult the upstream ERDDAP directly (links in `list_collections`).
+> AQUAVIEW's RA coverage is uneven — SECOORA, AOOS, and CENCOOS have rich coverage; CDIP and NANOOS are thinly indexed at the moment. For RAs with low item counts, consult the upstream ERDDAP directly (links in `list_collections`).
 
 ## A repeatable prompt pattern
 
